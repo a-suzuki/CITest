@@ -12,7 +12,7 @@ public class HelloWorldTest {
 	@Test
 	public void test() {
 		HelloWorld target = new HelloWorld();
-		assertThat(target.getHello(), is(""));
+		assertThat(target.getHello(), is("Hello wold!"));
 	}
 
 }
