@@ -19,6 +19,21 @@
 			<groupId>org.jacoco</groupId>
 			<artifactId>jacoco-maven-plugin</artifactId>
 			<version>0.6.3.201306030806</version>
+			<executions>
+				<execution>
+					<id>prepare-agent</id>
+					<phase>test-compile</phase>
+					<goals>
+						<goal>prepare-agent</goal>
+					</goals>
+					<configuration>
+						<propertyName>jacocoArgs</propertyName>
+						<includes>
+							<include>mockexamtool.*</include>
+						</includes>
+					</configuration>
+				</execution>
+			</executions>
 		</plugin>
 		<plugin>
 			<groupId>org.eluder.coveralls</groupId>
