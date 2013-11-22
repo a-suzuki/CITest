@@ -29,7 +29,7 @@
 					<configuration>
 						<propertyName>jacocoArgs</propertyName>
 						<includes>
-							<include>mockexamtool.*</include>
+							<include>citest.*</include>
 						</includes>
 					</configuration>
 				</execution>
